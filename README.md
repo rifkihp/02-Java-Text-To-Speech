@@ -13,4 +13,3 @@ untuk menlihat outputnya ada di folder outputs/
 sementara untuk file source nya ada di folder sources/ berupa file .txt
 
 Source utama ada di file src\main\java\com\application\texttospeech\texttospeech\Main.java
-
