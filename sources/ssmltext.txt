@@ -1,0 +1,7 @@
+<speak>
+   <emphasis level="strong">Hallo Semua,</emphasis>
+   <break time="200ms"/> Selamat Datang di channel Youtube Saya, 
+   <break time="400ms"/><emphasis level="moderate">Belajar Koding.</emphasis>
+   Jangan Lupa Subscribe, <break time="400ms"/>Likes, dan komen.
+   <break time="200ms"/>Terimakasih.
+</speak>
