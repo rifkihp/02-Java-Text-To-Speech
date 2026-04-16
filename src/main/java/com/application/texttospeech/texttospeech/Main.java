@@ -155,7 +155,7 @@ public class Main {
         
             try (OutputStream out = new FileOutputStream("outputs/" + fileName)) {
                 out.write(audioContents.toByteArray());
-                System.out.println("Audio content written to file \""+fileName+"\"");
+                System.out.println("Audio content written to file ”"+fileName+"”");
                 
                 return audioContents;
             }
@@ -164,7 +164,7 @@ public class Main {
     
     static ByteString synthesizeSsmlFromFile(String ssmlFile) throws Exception {
     
-        String pathSourceFile = "D:/Java/02-Java-Text-To-Speech/sources/";
+        String pathSourceFile = "D:/Java/Java-Text-To-Speech/sources/";
         TextToSpeechSettings setting = getSetting();
         
         // Instantiates a client
@@ -177,7 +177,7 @@ public class Main {
             // Build the voice request
             VoiceSelectionParams voice = VoiceSelectionParams.newBuilder()
                 .setLanguageCode("id-ID") // languageCode = "en_us"
-                .setName("id-ID-Standard-B")
+                .setName("id-ID-Chirp3-HD-Alnilam")
                 .setSsmlGender(SsmlVoiceGender.MALE) // ssmlVoiceGender = SsmlVoiceGender.FEMALE
                 .build();
 
@@ -201,7 +201,7 @@ public class Main {
             String fileName = "output_" + timestamp + ".mp3"; 
             try (OutputStream out = new FileOutputStream("outputs/" + fileName)) {
                 out.write(audioContents.toByteArray());
-                System.out.println("Audio content written to file \""+fileName+"\"");
+                System.out.println("Audio content written to file ”"+fileName+"”");
             }
             
             return audioContents;
@@ -212,10 +212,10 @@ public class Main {
        //listAllSupportedVoices();
        
        
-       ByteString mySoundData = synthesizeSsmlFromText("Halo Semuanya, Apa kabar? Semoga Sehat selalu. Amin.");
+       ByteString mySoundData = synthesizeSsmlFromText("Sekarang giliran Anda untuk mencoba! Jika ada pertanyaan, jangan ragu tulis di kolom komentar. Terima kasih sudah menonton, sampai jumpa!");
        
        //String SourceFileName = "testing.txt"; 
-       //synthesizeSsmlFromFile(SourceFileName);
+       //ByteString mySoundData = synthesizeSsmlFromFile(SourceFileName);
    
         SwingUtilities.invokeLater(() -> {
             playSound(mySoundData);

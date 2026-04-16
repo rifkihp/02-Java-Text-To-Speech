@@ -1,0 +1,26 @@
+1. Membangun Database Online untuk Aplikasi Java Android: Bagian 1 Login User.
+Step By Step:
+Tahap 1: Menyiapkan data.
+Mempersiapkan sebuah database menggunakan MySQL.
+Membuka phpMyAdmin, login dengan user dan password MySQL yang sudah terpasang di server.
+Kemudian buat sebuah database. Contoh, kita buat database "dataku".
+Selanjutnya lakukan import data dari file "user.sql" yang sudah disediakan. 
+Tahap 2: Menyiapkan Framework.
+Untuk dapat melakukan akses dan pengecekan ke database dari aplikasi yang berbeda maka diperlukan framework.
+framework yang digunakan adalah CodeIgniter 4 atau disingkat dengan CI4.
+Framework dapat di download melalui link yang sudah disediakan di deskripsi video ini.
+Tahap 3: Melakukan Coding.
+Pada tahap ini file yang diperlukan adalah:
+Konfigurasi koneksi ke database di file ".env". 
+model yaitu "User.php" ada di folder model. 
+kemudian controller yaitu "Auth.php" ada di folder controller.
+Tidak lupa juga menambahkan validasi ada di file validation.php di folder Config.
+Untuk enkripsi password dibutuhkan library "MCrypt.php" di folder "Libraries".
+dan berikut ini adalah isi dari coding dari ke 3 file tersebut.
+Output dari coding ini adalah sebuah restful API berbentuk JSON sehingga akan mudah di baca atau digunakan oleh aplikasi lain.
+Berikut ini adalah contoh restful API JSON. 
+Kemudian kita tambahkan Route agar dapat di akses melalui aplikasi lain. Sebagai berikut:
+Tahap 4: Percobaan.
+Untuk melakukan percobaan dari Coding yang sudah dibuat diatas. Kita gunakan software "Postman"
+kita lakukan "hit" pada sebuah link yang kita buat pada file Route tadi menggunakan metode "POST".
+Respon akan tampil seperti ini:
